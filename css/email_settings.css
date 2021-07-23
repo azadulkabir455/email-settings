@@ -1,0 +1,22 @@
+.emailSettings {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.emailSettings .row {
+    margin-bottom: 0px;
+}
+.emailSettings .row .col {
+    padding:0;  
+}
+.emailSettings {
+    margin-top: 22px;
+    margin-left: 21px;
+}
+.emailSettings .emailTopSecton {
+    background-color: var(--white);
+    padding: 0 10px;
+}
+.emailSettings  .tabs {
+    background-color: transparent;
+}
