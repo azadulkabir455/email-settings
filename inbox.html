@@ -1254,49 +1254,128 @@
 		<main class="main__content" id="main__content">
 			<div class="emailSettings">
 				<div class="row">
-						<div class="col s12">
-							<div class="row emailTopSecton">
-								<div class="col s8">
-									<ul class="tabs">
-										<li class="tab col s3">
-											<a href="#test1">
-												<img src="images/emailSettings/user.svg" alt="User">
-												<span>Email Provider</span>
-											</a>
-										</li>
-										<li class="tab col s3">
-											<a class="active" href="#test2">
-												<img src="images/emailSettings/usereye.svg" alt="User">
-												<span>Can Spam Address</span>
-											</a>
-										</li>
-										<li class="tab col s3">
-											<a href="#test4">
-												<img src="images/emailSettings/settings.svg" alt="User">
-												<span>Email Signature</span>
-											</a>
-										</li>
-										</ul>
-								</div>
-								<div class="col s4">
-									<button data-target="modal1" class="btn modal-trigger">Choose another email provider</button>
-									<div id="modal1" class="modal">
-										<div class="modal-content">
-											<h4>Modal Header</h4>
-											<p>A bunch of text</p>
+					<div class="col s12">
+						<div class="row emailTopSecton">
+							<div class="col s10">
+								<ul class="tabs">
+									<li class="tab col s3">
+										<a href="#provider" class="active">
+											<img src="images/emailSettings/user.svg" alt="User">
+											<span>Email Provider</span>
+										</a>
+									</li>
+									<li class="tab col s3">
+										<a href="#spamAddress">
+											<img src="images/emailSettings/usereye.svg" alt="User">
+											<span>Can Spam Address</span>
+										</a>
+									</li>
+									<li class="tab col s3">
+										<a href="#test4">
+											<img src="images/emailSettings/settings.svg" alt="User">
+											<span>Email Signature</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Email Provider -->
+					<div id="provider" class="col s12">
+						<img src="images/emailSettings/right.svg" alt="">
+						<h3>You're setting up System Default email provider.</h3>
+						<p>No setup is required</p>
+						<!-- Modal -->
+						<a class="waves-effect waves-light btn modal-trigger" href="#emailProvider">Choose another email provider</a>
+
+						<!-- Modal Structure -->
+						<div id="emailProvider" class="modal">
+						  <div class="modal-header">
+							<h4>Choose another email provider</h4>
+							<p>Email provider that will be use to send emails. Simply connect your email provider to get started</p>
+							<img src="images/emailSettings/close.svg" alt="" class="modal-close">
+						  </div>
+						  <div class="modal-content">
+							<div class="emailOption">
+								<button class="btn">
+									<img src="images/emailSettings/systemDefault.svg" alt="">
+									<p>Use System default</p>
+								</button>
+								<button class="btn">
+									<img src="images/emailSettings/personalMail.svg" alt="">
+									<p>Personal Mail</p>
+								</button>
+							</div>
+							<div class="emailInput">
+								<p>You must use a valid credential email</p>
+								<form action="/">
+									<div class="row">
+										<div class="col s9 input-field">
+											<input id="last_name" type="text" class="validate">
 										</div>
-										<div class="modal-footer">
-											<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+										<div class="col s3 input-field">
+											<input type="submit" value="submit">
 										</div>
 									</div>
-								</div>
+								</form>
 							</div>
-
-
+						  </div>
 						</div>
-					<div id="test1" class="col s12">Test 1</div>
-					<div id="test2" class="col s12">Test 2</div>
-					<div id="test4" class="col s12">Test 4</div>
+					</div>
+					<!-- spam Address -->
+					<div id="spamAddress" class="col s12">
+						<h4>What evCan Spam Address ent is this ?</h4>
+						<p>This address will be appended to the end of your emails in compliance with the CAN-SPAM Act.</p>
+						<p>The CAN-SPAM Act is a U.S. law that regulates commercial email. This law requires that email messages contain a valid physical postal address or P.O. box address. You can modify the physical postal address later, but it must be a valid one where you can receive postal mail.</p>
+						<p><a href="#">Read more about the CAN-SPAM Act on the FTC website.</a></p>
+						<div class="row">
+							<form class="col s12">
+							  <div class="row">
+								<div class="col s6">
+								  <div class="input-field">
+									<input placeholder="Jhon Deo" id="first_name" type="text" class="validate">
+									<label for="first_name">Name</label>
+								  </div>
+								  <div class="input-field">
+									<textarea id="textarea1" class="materialize-textarea"></textarea>
+          							<label for="textarea1">Textarea</label>
+								  </div>
+								</div>
+								<div class="input-field col s6">
+									<div class="input-field">
+										<input placeholder="State" id="first_name" type="text" class="validate">
+										<label for="first_name">State *</label>
+									</div>
+									<div class="input-field">
+										<input placeholder="City" id="first_name" type="text" class="validate">
+										<label for="first_name">City  *</label>
+									</div>
+									<div class="input-field">
+										<input placeholder="Zip" id="first_name" type="text" class="validate">
+										<label for="first_name">Zip</label>
+									</div>
+								</div>
+							  </div>
+							  <div class="row ">
+								<div class="input-field col 12 ">
+									<input type="submit" value="submit" class="btn">
+								  </div>
+							  </div>
+							</form>
+						  </div>						
+					</div>
+					<div id="test4" class="col s12">
+						<div>Text</div>
+						<div class="row">
+							<div class="col s6">
+								<p>Show signature in email body? </p>
+								<img src="images/emailSettings/tik.svg" alt="">
+							</div>
+							<div class="col s6">
+								<button class="btn large-button">Save Signature</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
